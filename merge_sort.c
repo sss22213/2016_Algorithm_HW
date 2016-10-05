@@ -37,7 +37,7 @@ int main(int argc,char* argv[])
 	int *arry=(int*)malloc((argc-1)*sizeof(int));
 	for(int i=1;i<argc;i++)arry[i-1]=atoi(argv[i]);
 //print(arry,argc-1);
-	merge_sort(arry,reg,0,argc-1);
+	merge_sort(arry,reg,0,argc-2);
 //	print(arry,argc-1);	
 	free(reg);
 	reg=NULL;
